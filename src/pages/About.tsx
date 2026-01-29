@@ -16,14 +16,14 @@ const About = () => {
                 
                 <div className="space-y-8">
                   <p className="text-lg text-muted-foreground leading-relaxed">
-                    We believe architecture should enhance human experience while respecting 
-                    the natural environment. Our practice focuses on creating spaces that 
-                    are both functional and poetic.
+                    We believe great design should elevate brands and connect with audiences 
+                    on a deeper level. Our practice focuses on creating visuals that 
+                    are both impactful and memorable.
                   </p>
                   
                   <p className="text-lg text-muted-foreground leading-relaxed">
                     Founded in 2015, our studio has completed over 200 projects across 
-                    residential, commercial, and cultural sectors. Each project begins 
+                    branding, print, and digital design. Each project begins 
                     with careful listening and ends with thoughtful execution.
                   </p>
                 </div>
@@ -35,15 +35,15 @@ const About = () => {
                   <div className="space-y-6">
                     <div className="border-l-2 border-architectural pl-6">
                       <h4 className="text-lg font-medium mb-2">Research</h4>
-                      <p className="text-muted-foreground">Deep understanding of context, culture, and climate</p>
+                      <p className="text-muted-foreground">Deep understanding of brand identity, audience, and market</p>
                     </div>
                     <div className="border-l-2 border-architectural pl-6">
                       <h4 className="text-lg font-medium mb-2">Collaboration</h4>
-                      <p className="text-muted-foreground">Close partnership with clients, engineers, and craftspeople</p>
+                      <p className="text-muted-foreground">Close partnership with clients, printers, and developers</p>
                     </div>
                     <div className="border-l-2 border-architectural pl-6">
                       <h4 className="text-lg font-medium mb-2">Innovation</h4>
-                      <p className="text-muted-foreground">Sustainable materials and forward-thinking design solutions</p>
+                      <p className="text-muted-foreground">Cutting-edge techniques and forward-thinking design solutions</p>
                     </div>
                   </div>
                 </div>
