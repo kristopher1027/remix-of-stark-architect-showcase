@@ -20,7 +20,7 @@ const Hero = () => {
           GRAPHIC
         </h1>
         <p className="text-xl md:text-2xl text-white/80 font-light tracking-wide max-w-2xl mx-auto reveal-delayed">
-          Creating spaces that inspire through thoughtful design and uncompromising quality
+          Crafting bold visual identities and compelling designs that elevate your brand
         </p>
       </div>
       
