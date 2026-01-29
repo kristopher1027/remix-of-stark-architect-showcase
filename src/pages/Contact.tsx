@@ -19,8 +19,8 @@ const Contact = () => {
                 <div className="space-y-8">
                   <div>
                     <h3 className="text-minimal text-muted-foreground mb-2">EMAIL</h3>
-                    <a href="mailto:hello@archstudio.com" className="text-xl hover:text-muted-foreground transition-colors duration-300">
-                      hello@archstudio.com
+                    <a href="mailto:hello@xtophergraphic.com" className="text-xl hover:text-muted-foreground transition-colors duration-300">
+                      hello@xtophergraphic.com
                     </a>
                   </div>
                   
@@ -32,7 +32,7 @@ const Contact = () => {
                   </div>
                   
                   <div>
-                    <h3 className="text-minimal text-muted-foreground mb-2">STUDIO</h3>
+                    <h3 className="text-minimal text-muted-foreground mb-2">OFFICE</h3>
                     <address className="text-xl not-italic">
                       123 Design Avenue
                       <br />
@@ -62,7 +62,7 @@ const Contact = () => {
                   <p className="text-muted-foreground">
                     We approach each project with curiosity, rigor, and a commitment to excellence. 
                     Our process begins with listening, understanding your vision, and translating 
-                    it into spaces that exceed expectations.
+                    it into designs that exceed expectations.
                   </p>
                 </div>
               </div>
