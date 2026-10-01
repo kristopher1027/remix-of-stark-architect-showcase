@@ -1,73 +1,67 @@
-# Welcome to your Lovable project
+# Xtopher Graphic
 
-## Project info
+A bold, minimal portfolio website for **Xtopher Graphic** — a creative graphic design studio specializing in visual identities, branding, print, and digital experiences.
 
-**URL**: https://lovable.dev/projects/09a14ae7-bd4a-415b-b22e-66bbeb1a9240
+## Features
 
-## How can I edit this code?
+- **Multi-page portfolio** — Work, Services, About, Blog, and Contact pages
+- **Dark / light mode** — theme toggle persisted across sessions
+- **Responsive design** — mobile-friendly navigation and layouts
+- **Smooth animations** — fade-in and scale transitions throughout
+- **SEO-ready** — page title, meta description, and Open Graph tags
 
-There are several ways of editing your application.
+## Tech Stack
 
-**Use Lovable**
+- [React 18](https://react.dev) — UI library
+- [TypeScript](https://www.typescriptlang.org) — type safety
+- [Vite](https://vitejs.dev) — build tool & dev server
+- [Tailwind CSS](https://tailwindcss.com) — utility-first styling with a semantic design-token system
+- [shadcn/ui](https://ui.shadcn.com) — accessible UI components
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/09a14ae7-bd4a-415b-b22e-66bbeb1a9240) and start prompting.
+## Getting Started
 
-Changes made via Lovable will be committed automatically to this repo.
+### Prerequisites
 
-**Use your preferred IDE**
+- [Node.js](https://nodejs.org) (v18 or later recommended)
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
-
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
-
-Follow these steps:
+### Install & run
 
 ```sh
-# Step 1: Clone the repository using the project's Git URL.
+# Clone the repository
 git clone <YOUR_GIT_URL>
-
-# Step 2: Navigate to the project directory.
 cd <YOUR_PROJECT_NAME>
 
-# Step 3: Install the necessary dependencies.
-npm i
+# Install dependencies
+npm install
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
+# Start the dev server
 npm run dev
 ```
 
-**Edit a file directly in GitHub**
+The site runs at `http://localhost:8080` with hot reloading enabled.
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+### Build for production
 
-**Use GitHub Codespaces**
+```sh
+npm run build
+npm run preview   # locally preview the production build
+```
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+## Project Structure
 
-## What technologies are used for this project?
+```
+src/
+├── components/     # Shared UI (Navigation, Hero, Services, ThemeToggle…)
+├── pages/          # Route pages (Index, Work, Services, About, Blog, Contact)
+├── data/           # Static content (blog posts)
+├── hooks/          # Custom React hooks
+└── index.css       # Design tokens & global styles
+```
 
-This project is built with:
+## Deployment
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+This project is built with [Lovable](https://lovable.dev/projects/09a14ae7-bd4a-415b-b22e-66bbeb1a9240). To deploy, open the project in Lovable and go to **Share → Publish**. You can connect a custom domain under **Project Settings → Domains**.
 
-## How can I deploy this project?
+## Contact
 
-Simply open [Lovable](https://lovable.dev/projects/09a14ae7-bd4a-415b-b22e-66bbeb1a9240) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+Have a project in mind? Reach out at **hello@xtophergraphic.com** or via the [contact page](/contact).
