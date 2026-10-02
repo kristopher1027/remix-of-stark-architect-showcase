@@ -1,4 +1,4 @@
-import { ArrowDown, ArrowRight, ArrowUpRight, AtSign, Award, Blocks, Braces, Check, Github, Globe2, Linkedin, MapPin, Radio, Sparkles, Workflow } from "lucide-react";
+import { ArrowDown, ArrowRight, ArrowUpRight, AtSign, Award, Blocks, Braces, Github, Globe2, Linkedin, MapPin, Radio, Sparkles, Workflow } from "lucide-react";
 import Navigation from "@/components/Navigation";
 import idomaPreview from "@/assets/portfolio/idomaconnect-preview.jpg.asset.json";
 import aijePreview from "@/assets/portfolio/aije-community-shield-preview.jpg.asset.json";
