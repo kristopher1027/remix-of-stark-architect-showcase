@@ -1,67 +1,60 @@
-# Xtopher Graphic
+# Christopher Okoh — Full-Stack & AI Engineer
 
-A bold, minimal portfolio website for **Xtopher Graphic** — a creative graphic design studio specializing in visual identities, branding, print, and digital experiences.
+A personal portfolio for Christopher Okoh, a Nigeria-based full-stack and AI engineer. It brings selected projects, technical skills, learning experience, and contact links together on one page.
 
-## Features
+## What’s included
 
-- **Multi-page portfolio** — Work, Services, About, Blog, and Contact pages
-- **Dark / light mode** — theme toggle persisted across sessions
-- **Responsive design** — mobile-friendly navigation and layouts
-- **Smooth animations** — fade-in and scale transitions throughout
-- **SEO-ready** — page title, meta description, and Open Graph tags
+- An introduction and contact links for email, GitHub, and LinkedIn
+- Three featured projects, with previews for IdomaConnect AI and AIJE Community Shield
+- A categorized overview of tools and technologies
+- Fellowship, scholarship, and software-development learning milestones
+- A responsive layout, mobile navigation, and persistent light/dark theme switch
+- Search and social-sharing metadata in the page head
 
-## Tech Stack
+## Tech stack
 
-- [React 18](https://react.dev) — UI library
-- [TypeScript](https://www.typescriptlang.org) — type safety
-- [Vite](https://vitejs.dev) — build tool & dev server
-- [Tailwind CSS](https://tailwindcss.com) — utility-first styling with a semantic design-token system
-- [shadcn/ui](https://ui.shadcn.com) — accessible UI components
+- React 18 and TypeScript
+- Vite
+- Tailwind CSS with semantic design tokens
+- shadcn/ui and Lucide icons
+- React Router
 
-## Getting Started
+## Run locally
 
-### Prerequisites
-
-- [Node.js](https://nodejs.org) (v18 or later recommended)
-
-### Install & run
+Requirements: Node.js 18 or later.
 
 ```sh
-# Clone the repository
-git clone <YOUR_GIT_URL>
-cd <YOUR_PROJECT_NAME>
-
-# Install dependencies
 npm install
-
-# Start the dev server
 npm run dev
 ```
 
-The site runs at `http://localhost:8080` with hot reloading enabled.
+Vite serves the site at `http://localhost:8080` by default.
 
-### Build for production
+## Build and preview
 
 ```sh
 npm run build
-npm run preview   # locally preview the production build
+npm run preview
 ```
 
-## Project Structure
+## Main source files
 
-```
+```text
 src/
-├── components/     # Shared UI (Navigation, Hero, Services, ThemeToggle…)
-├── pages/          # Route pages (Index, Work, Services, About, Blog, Contact)
-├── data/           # Static content (blog posts)
-├── hooks/          # Custom React hooks
-└── index.css       # Design tokens & global styles
+├── assets/portfolio/    # CDN pointers for supplied project previews
+├── components/          # Shared navigation, theme controls, and UI
+├── pages/Index.tsx      # Integrated portfolio homepage
+├── App.tsx              # App routes and providers
+└── index.css            # Portfolio styles, color tokens, and responsive layout
+index.html               # Search and social-sharing metadata
 ```
 
-## Deployment
+## Publish
 
-This project is built with [Lovable](https://lovable.dev/projects/09a14ae7-bd4a-415b-b22e-66bbeb1a9240). To deploy, open the project in Lovable and go to **Share → Publish**. You can connect a custom domain under **Project Settings → Domains**.
+Open the project in Lovable and use **Share → Publish**. Add a custom domain in **Project Settings → Domains** if needed.
 
 ## Contact
 
-Have a project in mind? Reach out at **hello@xtophergraphic.com** or via the [contact page](/contact).
+- Email: [etzkristokency2@gmail.com](mailto:etzkristokency2@gmail.com)
+- GitHub: [kristopher1027](https://github.com/kristopher1027)
+- LinkedIn: [Christopher Okoh](https://www.linkedin.com/in/christopher-okoh-391933430/)
