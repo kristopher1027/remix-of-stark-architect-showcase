@@ -2,6 +2,7 @@ import { ArrowDown, ArrowRight, ArrowUpRight, AtSign, Award, Blocks, Braces, Git
 import Navigation from "@/components/Navigation";
 import idomaPreview from "@/assets/portfolio/idomaconnect-preview.jpg.asset.json";
 import aijePreview from "@/assets/portfolio/aije-community-shield-preview.jpg.asset.json";
+import portrait from "@/assets/portfolio/christopher-okoh-portrait.png.asset.json";
 
 const projects = [
   {
@@ -100,6 +101,10 @@ const Index = () => (
       <section id="about" className="about-section section-space">
         <div className="page-width about-grid">
           <div className="section-index"><span>01 / A LITTLE ABOUT ME</span><span className="index-rule" /></div>
+          <figure className="about-portrait">
+            <img src={portrait.url} alt="Portrait of Christopher Okoh" loading="lazy" />
+            <figcaption>Christopher Okoh · Full-stack &amp; AI engineer</figcaption>
+          </figure>
           <div className="about-content"><h2>Turning ideas into <span>intelligent solutions.</span></h2>
             <p>I’m a developer drawn to the space between AI, backend systems and full-stack product work. I like getting close to the problem, learning what people actually need and building software that makes a meaningful difference.</p>
             <div className="about-facts">
