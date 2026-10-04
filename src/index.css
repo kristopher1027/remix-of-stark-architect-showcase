@@ -152,6 +152,9 @@
 
 .about-section { background: var(--portfolio-panel); }
 .about-grid { display: grid; grid-template-columns: .72fr 1.16fr .8fr; gap: 48px; align-items: start; }
+.about-portrait { grid-column: 1; margin: 26px 0 0; }
+.about-portrait img { display: block; width: 100%; aspect-ratio: 4 / 5; object-fit: cover; object-position: top; border: 1px solid var(--portfolio-line); border-radius: 4px; filter: grayscale(18%); }
+.about-portrait figcaption { margin-top: 10px; color: var(--portfolio-muted); font-size: 10px; letter-spacing: .14em; text-transform: uppercase; }
 .section-index { display: flex; align-items: center; gap: 14px; white-space: nowrap; }
 .index-rule { width: 42px; height: 1px; background: var(--portfolio-coral); }
 .about-content h2, .section-heading h2, .skills-heading h2, .journey-grid > div:first-child h2, .contact-layout h2 { margin-top: 26px; font-size: 50px; line-height: 1.08; }
@@ -253,6 +256,7 @@
   .intro-grid { gap: 3%; }
   .intro-copy h1 { font-size: clamp(75px, 10vw, 102px); }
   .about-grid { grid-template-columns: .62fr 1fr; gap: 35px; }
+  .about-portrait { grid-column: 1; }
   .about-quote { grid-column: 2; margin-top: 0; }
   .project-row { gap: 34px; }
   .skills-layout { gap: 38px; }
@@ -298,6 +302,7 @@
   .intro-bottom { gap: 14px; padding-block: 15px; font-size: 7px; letter-spacing: .08em; }
   .intro-bottom a { flex: none; gap: 5px; font-size: 9px; }
   .about-grid { grid-template-columns: 1fr; gap: 23px; }
+  .about-portrait { grid-column: auto; max-width: 320px; margin-top: 6px; }
   .about-content h2, .section-heading h2, .skills-heading h2, .journey-grid > div:first-child h2 { margin-top: 18px; font-size: clamp(39px, 10vw, 49px); }
   .about-content > p { margin-top: 14px; font-size: 13px; }
   .about-facts { gap: 14px; margin-top: 22px; }
