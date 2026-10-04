@@ -84,12 +84,12 @@ const Index = () => (
             </div>
           </div>
 
-          <div className="intro-visual" aria-label="Developer identity illustration">
+          <div className="intro-visual" aria-label="Portrait of Christopher Okoh">
             <div className="visual-coordinate">09°04′N&nbsp; 07°29′E</div>
             <div className="orbit orbit-outer" />
             <div className="orbit orbit-inner" />
             <div className="visual-cross visual-cross-one" /><div className="visual-cross visual-cross-two" />
-            <div className="visual-core"><span>CO</span><i /></div>
+            <div className="visual-core"><img src={portrait.url} alt="Christopher Okoh" /><i /></div>
             <div className="visual-code"><span className="code-light">01</span> systems<br /><span className="code-light">02</span> people<br /><span className="code-light">03</span> possibility</div>
             <div className="visual-caption"><span>BUILDING AT THE INTERSECTION</span><span>OF AI &amp; EVERYDAY LIFE</span></div>
             <span className="visual-star">✳</span>
@@ -101,10 +101,6 @@ const Index = () => (
       <section id="about" className="about-section section-space">
         <div className="page-width about-grid">
           <div className="section-index"><span>01 / A LITTLE ABOUT ME</span><span className="index-rule" /></div>
-          <figure className="about-portrait">
-            <img src={portrait.url} alt="Portrait of Christopher Okoh" loading="lazy" />
-            <figcaption>Christopher Okoh · Full-stack &amp; AI engineer</figcaption>
-          </figure>
           <div className="about-content"><h2>Turning ideas into <span>intelligent solutions.</span></h2>
             <p>I’m a developer drawn to the space between AI, backend systems and full-stack product work. I like getting close to the problem, learning what people actually need and building software that makes a meaningful difference.</p>
             <div className="about-facts">
