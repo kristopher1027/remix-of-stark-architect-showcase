@@ -14,7 +14,27 @@ export type Database = {
   }
   public: {
     Tables: {
-      [_ in never]: never
+      project_matcher_provider_state: {
+        Row: {
+          denial_message: string | null
+          id: boolean
+          provider_denied: boolean
+          updated_at: string
+        }
+        Insert: {
+          denial_message?: string | null
+          id?: boolean
+          provider_denied?: boolean
+          updated_at?: string
+        }
+        Update: {
+          denial_message?: string | null
+          id?: boolean
+          provider_denied?: boolean
+          updated_at?: string
+        }
+        Relationships: []
+      }
     }
     Views: {
       [_ in never]: never
