@@ -1,5 +1,20 @@
 {
   "version": "7",
   "dialect": "postgresql",
-  "entries": []
+  "entries": [
+    {
+      "idx": 0,
+      "version": "7",
+      "when": 1791482007316,
+      "tag": "0000_project_matcher_provider_state",
+      "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "7",
+      "when": 1791482269680,
+      "tag": "0001_project_matcher_pause_states",
+      "breakpoints": true
+    }
+  ]
 }

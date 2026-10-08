@@ -1,5 +1,6 @@
 import { ArrowDown, ArrowRight, ArrowUpRight, AtSign, Award, Blocks, Braces, Github, Globe2, Linkedin, MapPin, Radio, Sparkles, Workflow } from "lucide-react";
 import Navigation from "@/components/Navigation";
+import ProjectMatcher from "@/components/ProjectMatcher";
 import idomaPreview from "@/assets/portfolio/idomaconnect-preview.jpg.asset.json";
 import aijePreview from "@/assets/portfolio/aije-community-shield-preview.jpg.asset.json";
 import portrait from "@/assets/portfolio/christopher-okoh-portrait.png.asset.json";
@@ -116,6 +117,7 @@ const Index = () => (
       <section id="projects" className="projects-section section-space">
         <div className="page-width">
           <div className="section-heading"><div><div className="section-index"><span>02 / SELECTED WORK</span></div><h2>Built to be <span>useful.</span></h2></div><p>Three projects shaped by curiosity, practical engineering and a belief that technology can serve people.</p></div>
+          <ProjectMatcher projects={projects} />
           <div className="project-list">
             {projects.map((project) => (
               <article key={project.number} className="project-row">
