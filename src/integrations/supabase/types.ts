@@ -18,20 +18,26 @@ export type Database = {
         Row: {
           denial_message: string | null
           id: boolean
+          pause_message: string | null
           provider_denied: boolean
           updated_at: string
+          workspace_paused: boolean
         }
         Insert: {
           denial_message?: string | null
           id?: boolean
+          pause_message?: string | null
           provider_denied?: boolean
           updated_at?: string
+          workspace_paused?: boolean
         }
         Update: {
           denial_message?: string | null
           id?: boolean
+          pause_message?: string | null
           provider_denied?: boolean
           updated_at?: string
+          workspace_paused?: boolean
         }
         Relationships: []
       }

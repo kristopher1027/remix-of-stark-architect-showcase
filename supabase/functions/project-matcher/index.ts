@@ -127,18 +127,16 @@ Deno.serve(async (request) => {
   });
   const { data: gate, error: gateError } = await admin
     .from("project_matcher_provider_state")
-    .select("provider_denied, denial_message")
+    .select("provider_denied, denial_message, workspace_paused, pause_message")
     .eq("id", true)
     .maybeSingle();
 
   if (gateError) return errorResponse("The recommendation service is temporarily unavailable.", 503);
   if (gate?.provider_denied) {
-    // A fresh visitor submission is the only allowed new attempt after a prior provider denial.
-    const { error: clearError } = await admin
-      .from("project_matcher_provider_state")
-      .update({ provider_denied: false, denial_message: null, updated_at: new Date().toISOString() })
-      .eq("id", true);
-    if (clearError) return errorResponse("The recommendation service is temporarily unavailable.", 503);
+    return errorResponse(gate.denial_message ?? "The AI provider denied access. Recommendations are paused until access is restored.", 403);
+  }
+  if (gate?.workspace_paused) {
+    return errorResponse(gate.pause_message ?? "AI recommendations are paused until workspace access is restored.", 402);
   }
 
   const gatewayFetch = createLovableAiGatewayRunIdFetch(getLovableAiGatewayRunId(request));
@@ -204,6 +202,13 @@ Deno.serve(async (request) => {
         id: true,
         provider_denied: true,
         denial_message: failure.message ?? "The recommendation service denied access.",
+        updated_at: new Date().toISOString(),
+      });
+    } else if (failure.status === 402 || (failure.status === 403 && isWorkspaceBlock(failure))) {
+      await admin.from("project_matcher_provider_state").upsert({
+        id: true,
+        workspace_paused: true,
+        pause_message: describeFailure(error, failure),
         updated_at: new Date().toISOString(),
       });
     }
