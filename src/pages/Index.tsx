@@ -72,7 +72,7 @@ const Index = () => (
             <p className="intro-eyebrow">INDEPENDENT DEVELOPER <span>·</span> NIGERIA</p>
             <h1>Christopher<br /><span className="name-accent">Okoh</span><span className="name-period">.</span></h1>
             <div className="intro-role"><span /> Full-stack &amp; AI engineer</div>
-            <p className="intro-description">I build useful software with thoughtful AI, solid engineering and real people in mind.</p>
+            <p className="intro-description">I design and build thoughtful digital products — from reliable backend systems to AI-powered tools that solve real problems.</p>
             <div className="intro-actions">
               <a href="#projects" className="button-primary">Explore my work <ArrowDown size={16} aria-hidden="true" /></a>
               <a href="mailto:etzkristokency2@gmail.com" className="button-text">Get in touch <ArrowUpRight size={16} aria-hidden="true" /></a>
@@ -103,7 +103,7 @@ const Index = () => (
         <div className="page-width about-grid">
           <div className="section-index"><span>01 / A LITTLE ABOUT ME</span><span className="index-rule" /></div>
           <div className="about-content"><h2>Turning ideas into <span>intelligent solutions.</span></h2>
-            <p>I’m a developer drawn to the space between AI, backend systems and full-stack product work. I like getting close to the problem, learning what people actually need and building software that makes a meaningful difference.</p>
+            <p>I’m a full-stack and AI engineer focused on turning complex ideas into useful, dependable software. My work spans product interfaces, backend architecture, data systems and practical AI integrations — always grounded in the people who use what I build.</p>
             <div className="about-facts">
               <div><MapPin size={17} aria-hidden="true" /><span><b>Based in</b>Nigeria · open to remote</span></div>
               <div><Braces size={17} aria-hidden="true" /><span><b>Currently exploring</b>Go, system design &amp; advanced AI</span></div>
@@ -116,7 +116,7 @@ const Index = () => (
 
       <section id="projects" className="projects-section section-space">
         <div className="page-width">
-          <div className="section-heading"><div><div className="section-index"><span>02 / SELECTED WORK</span></div><h2>Built to be <span>useful.</span></h2></div><p>Three projects shaped by curiosity, practical engineering and a belief that technology can serve people.</p></div>
+          <div className="section-heading"><div><div className="section-index"><span>02 / SELECTED WORK</span></div><h2>Built to be <span>useful.</span></h2></div><p>Selected work across developer tooling, cultural knowledge and community safety — each shaped by practical engineering and a focus on real-world usefulness.</p></div>
           <ProjectMatcher projects={projects} />
           <div className="project-list">
             {projects.map((project) => (
@@ -146,14 +146,14 @@ const Index = () => (
 
       <section id="skills" className="skills-section section-space">
         <div className="page-width skills-layout">
-          <div className="skills-heading"><div className="section-index"><span>03 / TOOLS OF THE TRADE</span></div><h2>Always learning.<br /><span>Always building.</span></h2><p>A practical, growing toolkit for turning rough ideas into working software.</p></div>
+          <div className="skills-heading"><div className="section-index"><span>03 / TOOLS OF THE TRADE</span></div><h2>Always learning.<br /><span>Always building.</span></h2><p>The tools I use to move from a clear problem statement to a maintainable, production-minded solution.</p></div>
           <div className="skills-grid">{skillGroups.map((group, index) => <div className="skill-group" key={group.title}><span className="skill-index">0{index + 1}</span><h3>{group.title}</h3>{group.skills.map((skill) => <span className="skill-pill" key={skill}>{skill}</span>)}</div>)}</div>
         </div>
       </section>
 
       <section id="journey" className="journey-section section-space">
         <div className="page-width journey-grid">
-          <div><div className="section-index"><span>04 / THE JOURNEY SO FAR</span></div><h2>Growing through<br /><span>the work.</span></h2><p>Learning by doing, staying curious and showing up for the next challenge.</p></div>
+          <div><div className="section-index"><span>04 / THE JOURNEY SO FAR</span></div><h2>Growing through<br /><span>the work.</span></h2><p>A learning journey built around hands-on projects, collaboration and steady technical growth.</p></div>
           <div className="journey-list">{milestones.map((item, index) => <div className="journey-item" key={item.name}><span className="journey-counter">0{index + 1}</span><div className="journey-detail"><h3>{item.name}</h3><p>{item.detail}</p></div><span className={`journey-status ${item.status === "Completed" ? "is-complete" : ""}`}><i />{item.status}</span></div>)}</div>
         </div>
         <div className="page-width achievements-strip"><div className="section-index"><span>SMALL WINS, BIG MOTIVATION</span></div><div className="achievement-grid">{highlights.map(({ icon: Icon, title, detail }) => <div className="achievement" key={title}><Icon size={19} aria-hidden="true" /><h3>{title}</h3><p>{detail}</p></div>)}</div></div>
